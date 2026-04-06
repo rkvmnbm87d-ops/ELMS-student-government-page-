@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ELMS Student Government</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        padding: 20px;
+        color: rgb(255, 202, 224);
+        background-color: rgb(117, 158, 255);
+      }
+      button {
+        margin: 5px;
+        padding: 10px 20px;
+        color: rgb(81, 119, 161);
+      }
+      .home-button {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: rgb(255, 202, 224);
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the ELMS Student Government page</h1>
+    <p style="color: rgb(255, 202, 224);">Here you can find information about the student government and the events happening at our school.</p>
+    </p>
+    <button onclick="changeText()" style="background-color: rgb(255, 202, 224); color: rgb(255, 255, 255);">about us</button>
+    <button class="home-button" onclick="window.location.reload()">Home</button>
+    <script>
+      function changeText() {
+        const para = document.querySelector('p');
+        if (para.style.display === 'none') {
+          para.style.display = 'block';
+        } else {
+          para.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
